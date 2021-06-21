@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog DE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            /* width: 150px; este item se permanece pode limitar a quantidade de botoes na linha do menu*/
+            background-color: rgb(204, 152, 253);
+            overflow: hidden;
+        }
+
+        li{
+            float: left;
+        }
+
+        li a{
+            padding: 9px 18px;
+            display: block;
+            text-decoration: none;
+            color: black;
+            transition: all 0.1s ease;
+            /* font-weight:bold - deixa em negrito */
+            /* transition altera o tempo de transição pra acender os botões */
+        }
+/* fixa a cor do botão que esta ativo e mantem acendendo os demais */
+        li a:not(.menu-ativo):hover{
+            color: white;
+            background-color: violet;
+        }
+/* tipo de zoom usado nos botões */
+        li a:hover{
+          transform: scale(1.2);
+        }
+
+        .menu-ativo{
+                background-color: purple;
+                color: white;
+                font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <!-- direcionamento das paginas ao clicar nos botões do menu -->
+        <li><a href="index.html" class="menu-ativo"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="educacao.html"><i class="fas fa-graduation-cap"></i> Educação</a></li>
+        <li><a href="design.html"><i class="fas fa-palette"></i> Design</a></li>
+        <li><a href="tecnologia.html"><i class="fas fa-laptop-code"></i> Tecnologia</a></li>
+        <li><a href="gestao.html"><i class="fas fa-chart-pie"></i> Gestão</a></li>
+        <li><a href="inclusao.html"><i class="fas fa-wheelchair"></i> Inclusão</a></li>
+    </ul>
+</body>
+</html>
