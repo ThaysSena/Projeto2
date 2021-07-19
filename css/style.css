@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* width: 150px; este item se permanece pode limitar a quantidade de botoes na linha do menu*/
+  background-color: rgb(204, 152, 253);
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  padding: 9px 18px;
+  display: block;
+  text-decoration: none;
+  color: black;
+  transition: all 0.1s ease;
+  /* font-weight:bold - deixa em negrito */
+  /* transition altera o tempo de transição pra acender os botões */
+}
+/* fixa a cor do botão que esta ativo e mantem acendendo os demais */
+li a:not(.menu-ativo):hover {
+  color: white;
+  background-color: violet;
+}
+/* tipo de zoom usado nos botões */
+li a:hover {
+  transform: scale(1.2);
+}
+
+.menu-ativo {
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+}
+
+#banner {
+  width: 100%;
+  height: 300px;
+  float: left;
+  background: url(../img/banner\ projeto\ 2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
