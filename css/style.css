@@ -13,7 +13,7 @@ ul {
   margin: 0;
   padding: 0;
   /* width: 150px; este item se permanece pode limitar a quantidade de botoes na linha do menu*/
-  background-color: rgb(204, 152, 253);
+  background-color: rgb(178, 242, 253);
   overflow: hidden;
 }
 
@@ -25,15 +25,15 @@ li a {
   padding: 9px 18px;
   display: block;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   transition: all 0.1s ease;
   /* font-weight:bold - deixa em negrito */
   /* transition altera o tempo de transição pra acender os botões */
 }
 /* fixa a cor do botão que esta ativo e mantem acendendo os demais */
 li a:not(.menu-ativo):hover {
-  color: white;
-  background-color: violet;
+  color: rgb(243, 243, 243);
+  background-color: rgb(170, 238, 248);
 }
 /* tipo de zoom usado nos botões */
 li a:hover {
@@ -41,12 +41,13 @@ li a:hover {
 }
 
 .menu-ativo {
-  background-color: purple;
-  color: white;
+  background-color: rgb(133, 221, 255);
+  color: rgb(27, 27, 27);
   font-weight: bold;
 }
 
 #banner {
+  /* padrão: altura, largura e flutuação */
   width: 100%;
   height: 300px;
   float: left;
@@ -55,4 +56,32 @@ li a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+#conteudo {
+  width: 100%;
+  height: 350px;
+  float: left;
+}
+
+#centraliza-conteudo {
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#educacao {
+  width: 70%;
+  height: 300px;
+}
+
+#imagem-educacao {
+  width: 100%;
+  height: 500px;
+  background: url(../img/educacao2.png) no-repeat center center fixed;
+}
+
+#texto-educacao {
+  width: 50%;
+  height: 250px;
 }
